@@ -1,8 +1,44 @@
 import { Router, type IRouter } from "express";
-import healthRouter from "./health";
+import healthRouter from "./health.js";
+import docsRouter from "./docs.js";
+import transcriptRouter from "./transcript.js";
+import captchaRouter from "./captcha.js";
+import cardRouter from "./card.js";
+import moderationRouter from "./moderation.js";
+import backupRouter from "./backup.js";
+import aiRouter from "./ai.js";
+import analyticsRouter from "./analytics.js";
+import notificationsRouter from "./notifications.js";
+import economyRouter from "./economy.js";
+import schedulerRouter from "./scheduler.js";
+import pollsRouter from "./polls.js";
+import urlshortenerRouter from "./urlshortener.js";
+import gamesRouter from "./games.js";
+import authRouter from "./auth.js";
+import antiraidRouter from "./antiraid.js";
+import verificationRouter from "./verification.js";
+import sdkRouter from "./sdk.js";
 
 const router: IRouter = Router();
 
 router.use(healthRouter);
+router.use(docsRouter);
+router.use(transcriptRouter);
+router.use(captchaRouter);
+router.use(cardRouter);
+router.use(moderationRouter);
+router.use(backupRouter);
+router.use(aiRouter);
+router.use(analyticsRouter);
+router.use(notificationsRouter);
+router.use(economyRouter);
+router.use(schedulerRouter);
+router.use(pollsRouter);
+router.use(urlshortenerRouter);
+router.use(gamesRouter);
+router.use(authRouter);
+router.use(antiraidRouter);
+router.use(verificationRouter);
+router.use(sdkRouter);
 
 export default router;
