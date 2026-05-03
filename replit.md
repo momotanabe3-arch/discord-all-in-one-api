@@ -60,6 +60,13 @@ All endpoints require `Authorization: Bot YOUR_DISCORD_BOT_TOKEN`. Token is vali
 - `Dockerfile` + `docker-compose.yml` included for self-hosting
 - `.env.example` documents all configuration options
 
+## GitHub Push
+
+The project is ready to push to `momotanabe3-arch/discord-all-in-one-api`.
+The current PAT (`GITHUB_TOKEN` secret) is a fine-grained token that appears to lack "Contents: Read and Write" permission for git operations over HTTPS.
+
+To push, generate a **classic** PAT at https://github.com/settings/tokens with the `repo` scope, then provide it so we can retry.
+
 ## Environment Variables
 
 - `PORT` — Server port (auto-set by Replit)
